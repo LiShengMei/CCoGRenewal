@@ -1,3 +1,5 @@
+
+
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
@@ -7,7 +9,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/*Colour Codes
+	Titles : 
+	Paragraph : 516f8e
+	Links : 2f5d80, 007edf (hover)
+	Copyright : 9ebad8
+
+
+*/
+
+
 /* Reset */
+
+	
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1566,7 +1581,7 @@
 	}
 
 	body, input, select, textarea {
-		color: #464646;
+		color: #516f8e;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
@@ -1579,17 +1594,17 @@
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #00aeef;
+		color: #2f5d80;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #00aeef !important;
+			color: #007edf !important;
 			border-bottom-color: transparent;
 		}
 
 	strong, b {
-		color: #363636;
+		color: #2f5d80;
 		font-weight: 300;
 	}
 
@@ -1602,7 +1617,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #363636;
+		color: #2f5d80;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2101,7 +2116,7 @@
 	}
 
 	header p {
-		color: #363636;
+		color: #2f5d80;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2133,7 +2148,7 @@
 	}
 
 		header.major:after {
-			background: #00aeef;
+			background: #007edf;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2152,7 +2167,7 @@
 	}
 
 	label {
-		color: #363636;
+		color: #2f5d80;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 300;
@@ -2196,7 +2211,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #00aeef;
+			border-color: #007edf;
 		}
 
 	.select-wrapper {
@@ -2245,7 +2260,7 @@
 
 	select option {
 		background-color: #ffffff;
-		color: #363636;
+		color: #2f5d80;
 	}
 
 	select:focus::-ms-value {
@@ -2307,13 +2322,13 @@
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: rgba(255, 255, 255, 0.25);
-			color: #363636;
+			color: #2f5d80;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #00aeef;
+			border-color: #007edf;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2406,7 +2421,7 @@
 
 			.icon.alt:before {
 				color: #ffffff !important;
-				text-shadow: 1px 0 0 #363636, -1px 0 0 #363636, 0 1px 0 #363636, 0 -1px 0 #363636;
+				text-shadow: 1px 0 0 #2f5d80, -1px 0 0 #2f5d80, 0 1px 0 #2f5d80, 0 -1px 0 #2f5d80;
 			}
 
 		.icon.major {
@@ -2440,7 +2455,7 @@
 
 				.icon.major.alt:before {
 					color: #ffffff !important;
-					text-shadow: 1px 0 0 #363636, -1px 0 0 #363636, 0 1px 0 #363636, 0 -1px 0 #363636;
+					text-shadow: 1px 0 0 #2f5d80, -1px 0 0 #2f5d80, 0 1px 0 #2f5d80, 0 -1px 0 #2f5d80;
 				}
 
 /* Image */
@@ -2656,7 +2671,7 @@
 		}
 
 		table th {
-			color: #363636;
+			color: #2f5d80;
 			font-size: 0.9em;
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2714,8 +2729,8 @@
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-		color: #363636 !important;
+		box-shadow: inset 0 0 0 1px rgba(50, 95, 130, 0.3);
+		color: #2f5d80 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
@@ -2734,8 +2749,8 @@
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #00aeef;
-			color: #00aeef !important;
+			box-shadow: inset 0 0 0 1px #007edf;
+			color: #007edf !important;
 		}
 
 		input[type="submit"]:active,
@@ -2779,9 +2794,9 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #00aeef;
+			background-color: #007edf;
 			box-shadow: none;
-			color: #363636 !important;
+			color: #2f5d80 !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2807,7 +2822,7 @@
 		.button:disabled {
 			background-color: rgba(255, 255, 255, 0.3) !important;
 			box-shadow: none !important;
-			color: #363636 !important;
+			color: #2f5d80 !important;
 			cursor: default;
 			opacity: 0.25;
 		}
@@ -3020,7 +3035,7 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #00aeef;
+			border-color: #007edf;
 		}
 
 		.spotlight.style2 .content {
@@ -3082,7 +3097,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #00aeef;
+			background: #007edf;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3100,9 +3115,9 @@
 			.wrapper.style2 input[type="button"]:active,
 			.wrapper.style2 .button:hover,
 			.wrapper.style2 .button:active {
-				background-color: rgba(255, 255, 255, 0.075) !important;
+				background-color: rgba(0, 255, 255, 0.075) !important;
 				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-				color: #363636 !important;
+				color: #2f5d80 !important;
 			}
 
 			.wrapper.style2 input[type="submit"]:active,
@@ -3116,8 +3131,8 @@
 			.wrapper.style2 input[type="reset"].special,
 			.wrapper.style2 input[type="button"].special,
 			.wrapper.style2 .button.special {
-				background-color: #363636;
-				color: #00aeef !important;
+				background-color: #2f5d80;
+				color: #007edf !important;
 			}
 
 				.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
@@ -3129,7 +3144,7 @@
 				.wrapper.style2 .button.special:active {
 					background-color: rgba(255, 255, 255, 0.075) !important;
 					box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-					color: #363636 !important;
+					color: #2f5d80 !important;
 				}
 
 				.wrapper.style2 input[type="submit"].special:active,
@@ -3221,7 +3236,7 @@
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #00aeef;
+				color: #007edf;
 			}
 
 		.dropotron.level-0 {
@@ -3234,7 +3249,7 @@
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
-				background: #ffffff;
+				background: #007edf;
 				content: '';
 				display: block;
 				height: 1em;
@@ -3311,7 +3326,7 @@
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #00aeef;
+						color: #007edf;
 					}
 
 					#header nav ul li > ul {
@@ -3332,7 +3347,7 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #ffffff;
+		background-color: #007edf;
 		background-image: url("../../images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
@@ -3432,12 +3447,12 @@
 			}
 
 			#footer .icons .icon.alt:before {
-				color: #ffffff !important;
+				color: #007edf !important;
 				text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: #9ebad8;
 			font-size: 0.8em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
@@ -3446,7 +3461,7 @@
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px rgba(255, 255, 255, 0.3);
+				border-left: solid 1px #9ebad8;
 				display: inline-block;
 				list-style: none;
 				margin-left: 1.5em;
@@ -3756,7 +3771,7 @@
 			}
 
 				#titleBar .title {
-					color: #363636;
+					color: #2f5d80;
 					display: block;
 					font-weight: 300;
 					height: 44px;
@@ -3790,7 +3805,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #00aeef;
+						background: #007edf;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
@@ -3848,7 +3863,7 @@
 					}
 
 					#navPanel .link.depth-0 {
-						color: #363636;
+						color: #2f5d80;
 						font-weight: 300;
 					}
 
