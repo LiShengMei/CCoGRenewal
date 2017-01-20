@@ -1,0 +1,311 @@
+<?php
+//@ 欢迎来到懒人站长素材网站
+session_start();//定义session，同一IP登录不累加
+$filepath = 'count.txt';
+if ($_SESSION['temp'] == '')//判断$_SESSION[temp]的值是否为空,其中的temp为自定义的变量
+{
+ if (!file_exists($filepath))//检查文件是否存在，不存在刚新建该文件并赋值为0
+ {
+  $fp = fopen($filepath,'w');
+  fwrite($fp,0);
+  fclose($fp);
+  counter($filepath);
+ }else
+ {
+  counter($filepath);
+ }
+ $_SESSION['temp'] = 1;//登录以后,给$_SESSION[temp]赋一个值1
+}
+
+//counter()方法用来得到文件内的数字
+function counter($f_value)
+{
+ //用w模式打开文件时会清空里面的内容，所以先用r模式打开，取出文件内容，保存到变量
+ $fp = fopen($f_value,'r') or die('打开文件时出错。');
+ $countNum = fgets($fp,1024);
+ fclose($fp);
+ $countNum++;
+ $fpw = fopen($f_value,'w');
+ fwrite($fpw,$countNum);
+ fclose($fpw);
+}
+//注释下面一行可以实现同一IP登录不累加效果，测试时可以打开
+//session_destroy();
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+    <meta content="christ church of glory, christ, church, glory, chinese church, langley, vancouver, surrey, great vancouver, sermont, encounter, christian, worship, 基督敬拜中心, 温哥华教会, 教会, 温哥华, 素里,中国, 台湾, 大陆, 李秉中, 牧师, 礼拜, 家庭小组, 基督,荣耀,教会,基督荣耀教会, 溫哥華教會, 教會, 溫哥華, 素里,中國, 臺灣, 大陸, 牧師, 禮拜, 家庭小組" name="keywords">
+
+    <meta content="Christ church of glory center a chinese church locates at surrey city of Great Vancouver." name="description">
+
+    <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>基督榮耀教會 Christ Church of Glory Chinese Church</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  </head>
+  <body class="landing">
+    <!-- <font face="SimHei"> -->
+    <div id="page-wrapper">
+
+      <!-- NAVIGATION -->
+        <!-- <header id="header">
+          <h1 id="logo"><a href="index.html">基督榮耀教會</a></h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">主日信息</a></li>
+              <li><a href="elements.html">祷告聚会</a></li>
+              <li><a href="elements.html">线上灵修</a></li>
+              <li><a href="elements.html">教会活动</a></li>
+              <li><a href="#" class="button small">登入</a></li>
+            </ul>
+          </nav>
+        </header> -->
+
+      <!-- Banner -->
+        <section id="banner">
+          <div class="content">
+            <header>
+              <center>
+                <!-- <img src="images/CCoGlogo.jpg" alt="" width="75%" /> <br> -->
+                <h2>基督榮耀教會</h2>
+                <p>Christ Church of Glory Chinese Church</p>
+
+                <nav id="nav">
+                <ul>
+                  <a href="index.html">主日信息</a> • <a href="elements.html">祷告聚会</a> • <a href="elements.html">线上灵修</a> • <a href="elements.html">教会活动</a> • <a href="#">登入</a>
+                </ul>
+              </nav>
+              </center>
+            </header>
+            
+            <!-- <span class="image"></span> -->
+          </div>
+          <a href="#one" class="goto-next scrolly">Next</a>
+        </section>
+
+      <!-- One -->
+        <section id="one" class="spotlight style1 bottom">
+          <span class="image fit main"><img src="images/index_01.jpg" alt="" /></span>
+          <div class="content">
+            <div class="container">
+              <div class="row">
+                <div class="4u 12u$(medium)">
+                  <header>
+                    <h2>主日聚會資料</h2>
+                  </header>
+                </div>
+                <div class="4u 12u$(medium)">
+                  <p>
+                    聚會時間 : 10:00AM-12:00AM<br>
+                    教會地點 : 15100 66A Ave, Surrey, B.C. Canada<br>
+                    聯絡電話 : (604)951-8462<br>
+                    聯絡信箱 : <a href="mailto:welcome@christchurchofglory.net">Welcome@ChristChurchOfGlory.net</a><br>
+                  </p>
+                </div>
+                <div class="4u$ 12u$(medium)">
+                  <a href="https://www.google.ca/maps/place/15100+66A+Ave,+Surrey,+BC+V3S+2A5/@49.1225369,-122.8057065,17z/data=!3m1!4b1!4m5!3m4!1s0x5485da5cca27c3b3:0xe8ce3f0f6f33ad98!8m2!3d49.1225369!4d-122.8035178" target="_blank" class="button fit">看地圖 ➢</a>
+                  <center><a href="#top">會到上 ↑</a></center>
+                  <!-- <p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
+                  adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+                  Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+                  mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+                  ipsum dolor nullam.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#two" class="goto-next scrolly">Next</a>
+        </section>
+
+      <!-- Two -->
+        <section id="two" class="spotlight style2 right">
+          <span class="image fit main"><img src="images/index_02.jpg" alt="" /></span>
+          <div class="content">
+            <header>
+              <h2>主日信息</h2>
+            </header>
+            <p>
+                過去主日信息紀錄<br>
+                讀或聽主日信息
+              </p>
+            <ul class="actions">
+              <a href="#" class="button fit">去這一頁 ➢</a>
+              <center><a href="#top">會到上 ↑</a></center>
+            </ul>
+          </div>
+          <a href="#three" class="goto-next scrolly">Next</a>
+        </section>
+
+      <!-- Three -->
+        <section id="three" class="spotlight style3 left">
+          <span class="image fit main bottom"><img src="images/index_03.jpg" alt="" /></span>
+          <div class="content">
+            <header>
+              <h2>祷告聚会</h2>
+            </header>
+            <p>
+              禱告聚會時間與祷告负担分享<br>
+                欢迎参加我们的周间聚会！
+            </p>
+            <ul class="actions">
+              <a href="#" class="button fit">去這一頁 ➢</a>
+              <center><a href="#top">會到上 ↑</a></center>
+            </ul>
+          </div>
+          <a href="#four" class="goto-next scrolly">Next</a>
+        </section>
+
+      <!-- Four -->
+        <section id="four" class="spotlight style2 right">
+          <span class="image fit main"><img src="images/index_04.jpg" alt="" /></span>
+          <div class="content">
+            <header>
+              <h2>线上灵修</h2>
+            </header>
+            <p>
+                今日读经與感动分享
+              </p>
+            <ul class="actions">
+              <a href="#" class="button fit">去這一頁 ➢</a>
+              <center><a href="#top">會到上 ↑</a></center>
+            </ul>
+          </div>
+          <a href="#five" class="goto-next scrolly">Next</a>
+        </section>
+
+      <!-- Five -->
+        <section id="five" class="spotlight style3 left">
+          <span class="image fit main bottom"><img src="images/index_05.jpg" alt="" /></span>
+          <div class="content">
+            <header>
+              <h2>教会活动</h2>
+            </header>
+            <p>
+              最近活动更新與活动视频
+            </p>
+            <ul class="actions">
+              <a href="#" class="button fit">去這一頁 ➢</a>
+              <center><a href="#top">會到上 ↑</a></center>
+            </ul>
+          </div>
+          <!-- <a href="#four" class="goto-next scrolly">Next</a> -->
+        </section>
+
+
+
+      <!-- Five -->
+        <!-- <section id="five" class="wrapper style1 special fade-up">
+          <div class="container">
+            <header class="major">
+              <h2>Accumsan sed tempus adipiscing blandit</h2>
+              <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+            </header>
+            <div class="box alt">
+              <div class="row uniform">
+                <section class="4u 6u(medium) 12u$(xsmall)">
+                  <span class="icon alt major fa-area-chart"></span>
+                  <h3>Ipsum sed commodo</h3>
+                  <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                </section>
+                <section class="4u 6u$(medium) 12u$(xsmall)">
+                  <span class="icon alt major fa-comment"></span>
+                  <h3>Eleifend lorem ornare</h3>
+                  <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                </section>
+                <section class="4u$ 6u(medium) 12u$(xsmall)">
+                  <span class="icon alt major fa-flask"></span>
+                  <h3>Cubilia cep lobortis</h3>
+                  <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                </section>
+                <section class="4u 6u$(medium) 12u$(xsmall)">
+                  <span class="icon alt major fa-paper-plane"></span>
+                  <h3>Non semper interdum</h3>
+                  <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                </section>
+                <section class="4u 6u(medium) 12u$(xsmall)">
+                  <span class="icon alt major fa-file"></span>
+                  <h3>Odio laoreet accumsan</h3>
+                  <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                </section>
+                <section class="4u$ 6u$(medium) 12u$(xsmall)">
+                  <span class="icon alt major fa-lock"></span>
+                  <h3>Massa arcu accumsan</h3>
+                  <p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                </section>
+              </div>
+            </div>
+            <footer class="major">
+              <ul class="actions">
+                <li><a href="#" class="button">Magna sed feugiat</a></li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+
+      <!-- Six -->
+        <!-- <section id="Six" class="wrapper style2 special fade">
+          <div class="container">
+            <header>
+              <h2>Magna faucibus lorem diam</h2>
+              <p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+            </header>
+            <form method="post" action="#" class="container 50%">
+              <div class="row uniform 50%">
+                <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+                <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+              </div>
+            </form>
+          </div>
+        </section> -->
+
+      <!-- Footer -->
+        <footer id="footer">
+          <!-- <ul class="icons">
+            <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+          </ul> -->
+          <td width="900" height="34" valign="bottom">
+    <div align="center">
+      <a href="gx.php">Update</a> • <a href="https://hostingmanager.secureserver.net/SQLDBList.aspx?SQLDBType=MYSQL&ci=23451&accountUID=82a5905a-0519-11e1-a1f6-f04da206c13a">Maintenance </a> • 
+      <a href="gxpic.php">Pictures</a></div>
+      <div align="center"><font face="Arial">
+        <?  echo '欢迎来基督荣耀教会网站，您是本站第<font color="#FF0000">'.file_get_contents($filepath).'</font>位访客';?></font></div>
+      </td>
+          <ul class="copyright">
+            <li>&copy; 2017 基督榮耀教會 Christ Church of Glory. All rights reserved.</li><li>HTML5UP</li>
+          </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
