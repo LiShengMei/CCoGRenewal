@@ -96,10 +96,35 @@ function cut_str($string, $sublen, $start = 0, $code = 'UTF-8')
 
 
 
+
+<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
 </head>
 
 <body >
 <div id="wrapper" align="center">
+
+	<header id="header">
+		<h1 id="logo"><a href="index.html">基督榮耀教會</a></h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">主日信息</a></li>
+              <li><a href="#">祷告聚会</a></li>
+              <li><a href="#">线上灵修</a></li>
+              <li><a href="#">教会活动</a></li>
+              <li><a href="#" class="button small">登入</a></li>
+            </ul>
+          </nav>
+	</header>
+
+
+
 
 <div id="header" style="width:660px" >
 		<div id="hright">
