@@ -14,7 +14,10 @@
 	Titles : 
 	Paragraph : 516f8e
 	Links : 2f5d80, 007edf (hover)
+	
 	Copyright : 9ebad8
+
+	Mobile Sidebar BG : d6e1e5
 
 
 */
@@ -2757,7 +2760,7 @@
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(228, 76, 101, 0.15);
+			background-color: rgba(109, 207, 246, 0.15);
 		}
 
 		input[type="submit"].icon:before,
@@ -3840,7 +3843,7 @@
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #181920;
+				background: #d6e1e5;
 				padding: 0.75em 1.25em;
 			}
 
