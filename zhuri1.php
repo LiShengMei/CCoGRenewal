@@ -147,6 +147,11 @@ function cut_str($string, $sublen, $start = 0, $code = 'UTF-8')
 			</div>
 		</div>
   </div>
+
+
+
+
+  
 <div align="center" style="width:660px"><img src="images/heping.jpg" width="660px" height="180px" align="middle" /></div>
 <br/>
 			<?php  $conn = @mysql_connect("50.63.231.66","mess","Christ!1225"); 
